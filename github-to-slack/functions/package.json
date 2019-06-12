@@ -3,9 +3,15 @@
   "description": "Firebase Functions that posts new GitHub commits to a Slack channel.",
   "dependencies": {
     "crypto": "0.0.3",
-    "firebase-admin": "^4.1.2",
+    "firebase-admin": "^5.4.3",
     "firebase-functions": "^0.5.1",
     "request": "^2.80.0",
-    "request-promise": "^4.1.1"
-  }
+    "request-promise": "^4.1.1",
+    "snyk": "^1.175.3"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
