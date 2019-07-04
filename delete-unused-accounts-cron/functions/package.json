@@ -8,6 +8,12 @@
     "googleapis": "^16.1.0",
     "request": "^2.79.0",
     "request-promise": "^4.1.1",
-    "request-promise-native": "^1.0.3"
-  }
+    "request-promise-native": "^1.0.3",
+    "snyk": "^1.190.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
